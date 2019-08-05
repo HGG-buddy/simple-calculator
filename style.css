@@ -1,62 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Simple Calculator</title>
-</head>
-
-<body>
-        <nav class="navbar navbar-light bg-light">
-                <span class="navbar-brand mb-0 h1">Calculator</span>
-        </nav>
 
 
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Calculator</h1>
- 
-            <form>
-                <div class="form-group row">
-                    <label for="validationCustom01" class="col-sm-2 col-form-label">Value 1</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="value1" placeholder="Value 1">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="validationCustom02" class="col-sm-2 col-form-label">Value 2</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="value2" placeholder="Value 2">
-                    </div>
-                </div>
-                
-                <div class="form-group row">
-                    <label for="validationCustom03" class="col-sm-2 col-form-label"></label>
-                    <select class="custom-select my-1 mr-sm-2" id="operator">
-                        <option value="add">add</option>
-                        <option value="min">min</option>    
-                        <option value="div">div</option>
-                        <option value="mul">mul</option>
-                    </select>
-                </div>
+.bg1 {
+    position:absolute;
+    background-color: #667380;
+    width: 100%;
+    height:100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.box1 {
+    background-color: aliceblue;
+    padding: 20px;
+    position: absolute;
+    width:450px;
+    min-height: 330px;
+    top:50%;
+    
+    transform: translateY(-50%) translateX(-50%);
+
+}
 
 
-                    <button type="button" class="btn btn-primary" onclick="calc()" style="padding: 20px; margin: 20px ">Calculate</button>
-                    <div id="result" class="result"></div>
-            </form>
-         
+.square {
+    background-color: rgb(194, 194, 194);
+    padding: 30px;
+    max-width: 500px;
+    max-height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-        </div>
 
-
-
-    </div>
-</body>
-<script src="script.js"></script>
-
-</html>
